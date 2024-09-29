@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Condition Survey</title>
+    <link rel="stylesheet" href="usagestyle.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="outfit-generator.html">Outfit Generator</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="usage.html" class="active">Usage Tracker</a></li>
+            <li><a href="wardrobe.html">Wardrobe Management</a></li>
+        </ul>
+    </nav>
+
+    <h2>Apparel Condition Survey</h2>
+
+    <div class="question">
+        <label for="condition">What is the condition of the apparel?</label><br>
+        <select id="condition">
+            <option value="Brand New">Brand New</option>
+            <option value="Rarely Used">Rarely Used</option>
+            <option value="Occasionally Used">Occasionally Used</option>
+            <option value="Frequently Used">Frequently Used</option>
+            <option value="Well-Worn">Well-Worn</option>
+            <option value="Worn Out">Worn Out</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <label for="usageStatus">What is the usage status?</label><br>
+        <select id="usageStatus">
+            <option value="Very few times">Very few times</option>
+            <option value="Few times">Few times</option>
+            <option value="Many times">Many times</option>
+        </select>
+    </div>
+
+    <div class="question">
+        <label for="duration">How long have you had this apparel?</label><br>
+        <input type="number" id="durationValue" placeholder="Number" required> 
+        <select id="durationUnit">
+            <option value="days">Days</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+        </select>
+    </div>
+
+    <button onclick="submitSurvey()">Submit</button>
+
+    <script src="usagescript.js"></script> 
+</body>
+</html>

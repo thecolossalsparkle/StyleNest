@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7f9;
+    color: #333;
+}
+
+.hero {
+    background: linear-gradient(to right, #008080, #20b2aa);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.dashboard-overview {
+    margin: 20px;
+}
+
+.account-settings {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.account-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.account-icon img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.dashboard-overview h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none; 
+}
+
+.card a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.card.wardrobe {
+    background-image: linear-gradient(to right, #00695c, #004d40); 
+    color: white; 
+}
+
+.card h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem; 
+    color: #f0f0f0; 
+}
+.wardrobe {
+    background-image: linear-gradient(to right, #008080, #20b2aa);
+    color: white;
+}
+
+.accessories {
+    background-image: linear-gradient(to right, #00b5a1, #009688);
+    color: white;
+}
+
+.outfit {
+    background-image: linear-gradient(to right, #20b2aa, #00b5a1);
+    color: white;
+}
+
+.usage {
+    background-image: linear-gradient(to right, #00b5a1, #009688);
+    color: white;
+}
+
+.community {
+    background-image: linear-gradient(to right, #4db6ac, #26a69a);
+    color: white;
+}
+
+.outfit-generator {
+    background-image: linear-gradient(to right, #00897b, #00796b);
+    color: white;
+}
+
+.static-sustainability {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+    padding: 20px;
+    background-color: #004d40;
+    color: white;
+}
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media h3 {
+    margin-bottom: 10px; 
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; 
+    font-size: 1.5rem;
+}

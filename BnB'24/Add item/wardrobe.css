@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('itemsdetailbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00796b; 
+    color: white;
+    padding: 15px 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for color and shadow */
+}
+
+.navbar a:hover {
+    color: #a1d3d1; /* Lighter color on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow on hover */
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay for better visibility */
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(229, 221, 216, 0.9); /* Dark coffee background */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(186, 111, 58, 0.8); /* Coffee border */
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #D2691E; /* Chocolate color */
+    font-size: 2.5rem;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Elegant shadow */
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-file-upload {
+    border: 2px solid rgba(139, 69, 19, 0.8); /* Coffee color for border */
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #8B4513; /* SaddleBrown color */
+    color: #fff; /* White text for contrast */
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #A0522D; /* Sienna color for hover background */
+    border: 2px solid #D2691E; /* Chocolate color for border on hover */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #8B4513; /* SaddleBrown color */
+    color: #fff; /* White text for contrast */
+    border: 2px solid rgba(139, 69, 19, 0.8); /* Coffee color for border */
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #A0522D; /* Sienna color for hover background */
+    border: 2px solid #D2691E; /* Chocolate color for border on hover */
+}
+
+button:active {
+    box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.5); /* Button press effect */
+}
+
+/* Additional styling for form inputs or text */
+input[type="text"], textarea {
+    border: 1px solid rgba(139, 69, 19, 0.6); /* Coffee color for text input border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3E2723; /* Darker coffee background */
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #D2691E; /* Chocolate color for focus effect */
+}
+
+/* Description Box */
+.description-box {
+    margin-top: 20px; /* Spacing above the description box */
+    padding: 10px; /* Padding inside the box */
+    background-color: #844209; /* Background color for the box */
+    border: 2px solid #924c1b; /* Border color and width */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text inside the box */
+}
+
+.description-link {
+    color: #eef0f6; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Font size */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.description-link:hover {
+    color: #D2691E; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}

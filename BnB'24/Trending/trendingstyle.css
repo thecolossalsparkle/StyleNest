@@ -1,0 +1,290 @@
+/* Color Palette: Coffee, Mud, Chocolate */
+:root {
+    --coffee: #195b5c;
+    --mud: #385554;
+    --chocolate: #3a7977;
+    --light-coffee: #95afb3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-coffee);
+    color: var(--coffee);
+    line-height: 1.6;
+} */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #004d40; /* Dark teal background */
+    color: #e0f7fa; /* Light teal text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('trending.jpg') no-repeat center center fixed; /* Static background image */
+    background-size: cover; /* Ensure it covers the entire background */
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--coffee);
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+.navbar {
+    background-color: #00796b; 
+    color: white;
+    padding: 15px 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for color and shadow */
+}
+
+.navbar a:hover {
+    color: #a1d3d1; /* Lighter color on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow on hover */
+}
+.parallax {
+    height: 500px;
+    background-image: url('parallax-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px black;
+}
+
+.trending-clothes {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--mud);
+    color: white;
+}
+
+.trending-clothes h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--chocolate);
+}
+
+/* Image Slider Styling */
+/* .slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid var(--chocolate);
+    border-radius: 10px;
+} */
+.slider img {
+    width: 100%; /* Make the image fill the entire width */
+    height: 100%; /* Make the image fill the entire height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.slider-wrapper {
+    display: flex;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Make the images and accessories bigger */
+.slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Center the description below the image */
+.slide p {
+    font-size: 1.5rem;
+    color: var(--coffee);
+}
+
+/* Slider navigation */
+button.prev, button.next {
+    background-color: var(--chocolate);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--coffee);
+    color: white;
+    text-align: center;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5C4033; /* Mud */
+    color: #D2B48C; /* Coffee */
+}
+
+/* Slider Container */
+.slider {
+    position: relative;
+    max-width: 90%; /* Adjust the width */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #118170; /* Chocolate */
+    padding: 10px;
+}
+
+/* Slides */
+.slider img {
+    width: 100%;
+    height: 500px; /* Define the height for the images */
+    object-fit: cover; /* Ensures the image covers the box without being stretched */
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+/* Text */
+.slider .text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    color: #D2B48C; /* Coffee */
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+.arrow:hover {
+    background-color: #D2691E; /* Darker tone for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slider img {
+        height: 300px; /* Adjust image height for smaller screens */
+    }
+
+    .slider .text {
+        font-size: 16px;
+    }
+
+    .arrow {
+        font-size: 25px;
+        padding: 8px;
+    }
+}

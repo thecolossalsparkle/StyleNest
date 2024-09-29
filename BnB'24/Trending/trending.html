@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Clothes</title>
+    <link rel="stylesheet" href="trendingstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="outfit-generator.html">Outfit Generator</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="usage.html">Usage Tracker</a></li>
+            <li><a href="wardrobe.html" class="active">Wardrobe Management</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Trending Clothing Store</h1>
+        <p>Your go-to destination for trendy outfits</p>
+    </header>
+
+    <section class="parallax">
+        <div class="overlay">
+            <h2>Discover Trending Clothes</h2>
+        </div>
+    </section>
+    
+    <section class="trending-clothes">
+        <h2>Trending Outfits</h2>
+        
+        <!-- Image Slider -->
+        <div class="slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="slides" id="slides">
+                    <!-- Slider items will be loaded dynamically here -->
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trending Clothing Store</p>
+    </footer>
+
+    <script src="trendingscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00796b; 
+    color: white;
+    padding: 15px 20px;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #ffccbc; /* Lighten color on hover */
+}
+
+.navbar a.active {
+    text-decoration: underline; /* Highlight the active link */
+}
+
+/* Outfit Generator Section */
+.outfit-generator {
+    margin-top: 80px; /* Add top margin to avoid overlap with navbar */
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background for section */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.outfit-generator h2 {
+    color: #00796b; /* Use a consistent theme color */
+    margin-bottom: 20px;
+    font-size: 24px; /* Larger font for headings */
+}
+
+/* Button Styling */
+#generate-btn {
+    background-color: #00796b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Add transform for scale effect */
+}
+
+#generate-btn:hover {
+    background-color: #004d40; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Outfit Display Area */
+.outfit-display {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light grey background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Set a minimum height for display */
+    text-align: center; /* Center content */
+}
+
+.outfit-display p {
+    color: #555; /* Darker grey for text */
+    font-size: 16px; /* Slightly larger text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #generate-btn {
+        width: 100%; /* Full-width button on small screens */
+    }
+
+    .outfit-generator {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .outfit-display {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}

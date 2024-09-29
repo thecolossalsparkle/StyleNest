@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="wardrobe.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="outfit-generator.html">Outfit Generator</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="usage.html">Usage Tracker</a></li>
+            <li><a href="wardrobe.html" class="active">Wardrobe Management</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Upload Your Item Here</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Choose File
+            </label>
+            <input id="file-upload" type="file" name="image" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+        <div class="description-box">
+            <a href="description.html" class="description-link">Photo Description</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 StyleNest</p>
+        <div class="social-media">
+            <h3>Follow Us:</h3>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
