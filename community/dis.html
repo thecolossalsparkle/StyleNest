@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe Discussion</title>
+    <link rel="stylesheet" href="dis.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="outfit-generator.html">Outfit Generator</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="usage.html">Usage Tracker</a></li>
+            <li><a href="wardrobe.html" class="active">Wardrobe Management</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Wardrobe & Accessories Discussion</h1>
+    </header>
+
+    <main>
+        <section id="discussion">
+            <h2>Join the Discussion</h2>
+            <form id="discussion-form">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="comments-section">
+            <h2>Comments</h2>
+            <ul id="comments-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wardrobe Discussion</p>
+    </footer>
+
+    <script src="dis.js"></script>
+</body>
+</html>

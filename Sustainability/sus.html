@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe Management</title>
+    <link rel="stylesheet" href="sus.css">
+</head>
+<body>
+    <header>
+        <h1>Wardrobe Management</h1>
+        <p>Your sustainable wardrobe solution</p>
+    </header>
+
+    <main>
+        <section id="user-activity">
+            <h2>User Activities</h2>
+
+            <!-- Sell Clothes Section -->
+            <div class="activity">
+                <label for="sell-items">Select items to sell:</label>
+                <input type="file" id="sell-items" multiple accept="image/*" onchange="previewImages(event, 'sell')">
+                <div id="sell-preview" class="image-preview"></div>
+                <label for="sell-description">Item description:</label>
+                <textarea id="sell-description" placeholder="Describe the items you are selling"></textarea>
+                <button onclick="handleAction('sell')">Sell Clothes</button>
+                <p>Points: <span id="sell-points">0</span></p>
+                <p id="sell-upload-status" class="upload-status"></p>
+            </div>
+
+            <!-- Donate Clothes Section -->
+            <div class="activity">
+                <label for="donate-items">Select items to donate:</label>
+                <input type="file" id="donate-items" multiple accept="image/*" onchange="previewImages(event, 'donate')">
+                <div id="donate-preview" class="image-preview"></div>
+                <label for="donate-description">Item description:</label>
+                <textarea id="donate-description" placeholder="Describe the items you are donating"></textarea>
+                <button onclick="handleAction('donate')">Donate Clothes</button>
+                <p>Points: <span id="donate-points">0</span></p>
+                <p id="donate-upload-status" class="upload-status"></p>
+            </div>
+
+            <!-- Exchange Clothes Section -->
+            <div class="activity">
+                <label for="exchange-items">Select items to exchange:</label>
+                <input type="file" id="exchange-items" multiple accept="image/*" onchange="previewImages(event, 'exchange')">
+                <div id="exchange-preview" class="image-preview"></div>
+                <label for="exchange-description">Item description:</label>
+                <textarea id="exchange-description" placeholder="Describe the items you are exchanging"></textarea>
+                <button onclick="handleAction('exchange')">Exchange Clothes</button>
+                <p>Points: <span id="exchange-points">0</span></p>
+                <p id="exchange-upload-status" class="upload-status"></p>
+            </div>
+
+            <!-- Reinvent Clothes Section -->
+            <div class="activity">
+                <label for="reinvent-items">Select items to reinvent:</label>
+                <input type="file" id="reinvent-items" multiple accept="image/*" onchange="previewImages(event, 'reinvent')">
+                <div id="reinvent-preview" class="image-preview"></div>
+                <label for="reinvent-description">Item description:</label>
+                <textarea id="reinvent-description" placeholder="Describe the items you are reinventing"></textarea>
+                <button onclick="handleAction('reinvent')">Reinvent Clothes</button>
+                <p>Points: <span id="reinvent-points">0</span></p>
+                <p id="reinvent-upload-status" class="upload-status"></p>
+            </div>
+
+            <!-- Lend Clothes Section -->
+            <div class="activity">
+                <label for="lend-items">Select items to lend:</label>
+                <input type="file" id="lend-items" multiple accept="image/*" onchange="previewImages(event, 'lend')">
+                <div id="lend-preview" class="image-preview"></div>
+                <label for="lend-description">Item description:</label>
+                <textarea id="lend-description" placeholder="Describe the items you are lending"></textarea>
+                <button onclick="handleAction('lend')">Lend Clothes</button>
+                <p>Points: <span id="lend-points">0</span></p>
+                <p id="lend-upload-status" class="upload-status"></p>
+            </div>
+        </section>
+
+        <section id="total-points">
+            <h2>Total Points: <span id="total-points-value">0</span></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wardrobe Management</p>
+    </footer>
+
+    <script src="sus.js"></script>
+</body>
+</html>

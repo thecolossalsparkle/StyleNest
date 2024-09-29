@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #004d40; 
+    color: #e0f7fa; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('sus.jpg.png') no-repeat center fixed;
+} */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #004d40; /* Dark teal background */
+    color: #e0f7fa; /* Light teal text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('sus.jpg') no-repeat center center fixed; /* Static background image */
+    background-size: cover; /* Ensure it covers the entire background */
+}
+
+
+header {
+    background-color: #00796b; /* Dark teal */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #20b2aa; /* Medium teal */
+}
+
+h1 {
+    font-size: 3em; /* Larger font for more impact */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff; /* White background for the main content */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.activity {
+    background-color: #e0f7fa; /* Light teal for the activity section */
+    border: 3px solid #20b2aa; /* Medium teal border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activity:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #00796b; /* Dark teal on hover */
+}
+
+.activity label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #004d40; /* Dark teal for labels */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #20b2aa;
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #00796b; /* Dark teal button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em; /* Larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 1.1em; /* Make points text bigger */
+}
+
+#total-points {
+    text-align: center;
+    padding: 25px;
+    background-color: #004d40; /* Dark teal */
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00251a; /* Darker greenish teal for footer */
+    color: #e0f7fa; /* Light teal text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}

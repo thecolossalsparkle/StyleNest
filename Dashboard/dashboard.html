@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleNest</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Welcome to StyleNest</h1>
+    <p>Manage your wardrobe and outfits with style!</p>
+</header>
+
+<section class="dashboard-overview">
+    <div class="account-settings">
+        <div class="account-icon" onclick="toggleDropdown()">
+            <i class="material-icons">person</i>
+        </div>
+        <div class="dropdown-content" id="dropdown">
+            <a href="#">Profile</a>
+            <a href="../Settings/Settings.html">Settings</a>
+            <a href="../index.html">Logout</a>
+        </div>
+    </div>
+    <h1>Welcome, [User's Name]</h1>
+    <div class="grid-container">
+        <a href="../Add item/wardrobe.html" class="card wardrobe">
+            <h2>Add Items</h2>
+            <p id="item-count">15 items</p>
+        </a>
+        <a href="../Trending/trending.html" class="card outfit">
+            <h2>Latest Outfit</h2>
+            <p id="latest-outfit">Autumn Look</p>
+        </a>
+        <a href="../Usage/usage.html" class="card usage">
+            <h2>Usage Stats</h2>
+            <p id="usage-stats">5 items worn this week</p>
+        </a>
+        <a href="../community/dis.html" class="card community">
+            <h2>Community</h2>
+            <p>Join the conversation</p>
+        </a>
+        <a href="../Generate outfit/outfitgen.html" class="card outfit-generator">
+            <h2>Outfit Generator</h2>
+            <p>Get inspired for your next look!</p>
+        </a>
+        <a href="/Wardrobe/wardrobe.html" class="card wardrobe">
+            <h2>Wardrobe</h2>
+            <p id="wardrobe-count">10 items</p>
+        </a>
+    </div>
+    <div class="static-sustainability">
+        <h2>Sustainability Score</h2>
+        <p id="sustainability-score">Total Points</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 StyleNest</p>
+    <div class="social-media">
+        <h3>Follow Us:</h3>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+</footer>
+
+<script src="dashboardscript.js"></script>
+</body>
+</html>

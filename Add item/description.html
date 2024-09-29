@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Description</title>
+    <link rel="stylesheet" href="wardrobe.css"> <!-- Link to your existing CSS -->
+</head>
+<!-- <style>
+    .message-header {
+        color: blue;
+    }
+    .message-content {
+        color: green;
+    }
+</style> -->
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Photo Description</h1>
+        <form id="description-form">
+            <input type="text" id="color" placeholder="Color" required>
+            <input type="text" id="material" placeholder="Material Used" required>
+            <input type="text" id="brand" placeholder="Brand" required>
+            <textarea id="additional-info" placeholder="Additional Information" rows="4"></textarea>
+            <button type="submit">Submit Description</button>
+        </form>
+        <div id="message" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        document.getElementById('description-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Get values from the input fields
+            const color = document.getElementById('color').value;
+            const material = document.getElementById('material').value;
+            const brand = document.getElementById('brand').value;
+            const additionalInfo = document.getElementById('additional-info').value;
+
+            // Here you can handle the form submission, e.g., send data to a server
+            // For now, we will just display a message
+//             const messageDiv = document.getElementById('message');
+// messageDiv.style.backgroundColor = 'black'; // Optional: set background color
+// messageDiv.innerHTML = `
+//     <h2 style="color: white;">Description Submitted!</h2>
+//     <p style="color: white;"><strong>Color:</strong> ${color}</p>
+//     <p style="color: white;"><strong>Material Used:</strong> ${material}</p>
+//     <p style="color: white;"><strong>Brand:</strong> ${brand}</p>
+//     <p style="color: white;"><strong>Additional Information:</strong> ${additionalInfo}</p>
+// `;
+const messageDiv = document.getElementById('message');
+messageDiv.innerHTML = `
+    <h2 class="message-header">Description Submitted!</h2>
+    <p class="message-content"><strong>Color:</strong> ${color}</p>
+    <p class="message-content"><strong>Material Used:</strong> ${material}</p>
+    <p class="message-content"><strong>Brand:</strong> ${brand}</p>
+    <p class="message-content"><strong>Additional Information:</strong> ${additionalInfo}</p>
+`;
+
+// const messageDiv = document.getElementById('message');
+//             messageDiv.innerHTML = 
+//                 <h2>Description Submitted!</h2>
+//                 <p><strong>Color:</strong> ${color}</p>
+//                 <p><strong>Material Used:</strong> ${material}</p>
+//                 <p><strong>Brand:</strong> ${brand}</p>
+//                 <p><strong>Additional Information:</strong> ${additionalInfo}</p>
+
+
+            // Clear the form
+            document.getElementById('description-form').reset();
+        });
+    </script>
+</body>
+</html>
